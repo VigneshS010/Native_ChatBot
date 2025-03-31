@@ -1,0 +1,5 @@
+streamlit
+transformers
+openai
+torch
+sentencepiece
