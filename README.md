@@ -1,66 +1,62 @@
-TAMIL CHATBOT AND TRANSLATOR
+```
+# Tamil Chatbot and Translator
 
-A Streamlit application combining a chatbot powered by the Google Gemma model (via OpenRouter API) and an English-to-Tamil translation tool using a Hugging Face model. Interact with an AI chatbot and translate text between English and Tamil in real-time.
+A Streamlit application for translating between English and Tamil, and interacting with a chatbot powered by OpenRouter's API.
 
----
+## Features
+- Real-time English to Tamil translation using Hugging Face models
+- Chat interface with AI chatbot using Google's Gemma-3-1b model via OpenRouter
+- Two-column interface for simultaneous translation and chat
 
-INSTALLATION
+## Installation
 
-1. Install required Python packages:
-   pip install streamlit transformers openai
+1. Clone the repository:
+```bash
+git clone [repository_url]
+```
 
-2. Set up OpenRouter API access:
-   - Create a free account at https://openrouter.ai
-   - Generate an API key in your account settings
-   - Create a .streamlit/secrets.toml file in your project directory with:
-     OPENROUTER_API_KEY = "your-api-key-here"
+2. Install dependencies:
+```bash
+pip install streamlit transformers openai
+```
 
----
+3. Set up API keys:
+   - Create `.streamlit/secrets.toml` file
+   - Add your OpenRouter API key:
+   ```toml
+   [OPENROUTER_API_KEY]
+   key = "your_api_key_here"
+   ```
 
-USAGE
+## Usage
 
 1. Start the application:
-   streamlit run app.py
+```bash
+streamlit run app.py
+```
 
-2. Interface components:
-   - Left Column (Chatbot):
-     * Enter text in "Speak with Chatbot" box
-     * Click "Answer" to get AI response
-     * Use "Copy to Translator" to transfer responses
+2. Use the interface:
+- **Left Column (Chatbot):**
+  - Enter text in the "Speak with Chatbot" text area
+  - Click "Answer" to get responses
+  - Use "Copy to Translator" to move responses to translation panel
 
-   - Right Column (Translator):
-     * Input English text in conversion box
-     * Click "Translate" to get Tamil output
+- **Right Column (Translator):**
+  - Enter English text in the input area
+  - Click "Translate" to get Tamil translation
 
-3. Example workflow:
-   a. Ask chatbot: "Explain quantum physics simply"
-   b. Copy response to translator
-   c. View Tamil translation of the explanation
+## Requirements
+- Python 3.7+
+- OpenRouter API key (free tier available)
+- Internet connection for model downloads
 
----
+## Contributing
+Contributions are welcome! Please:
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
+4. Ensure code follows PEP8 standards
 
-CONTRIBUTING
-
-Contributions are welcome through:
-1. Bug reports via GitHub Issues
-2. Feature requests with detailed descriptions
-3. Code contributions via pull requests:
-   - Fork the repository
-   - Create feature branch
-   - Add tests for new functionality
-   - Submit PR with clear documentation
-
----
-
-LICENSE
-
+## License
 MIT License
-
----
-
-NOTES
-
-- Chatbot requires valid OpenRouter API key in secrets.toml
-- Translation model automatically downloads from Hugging Face
-- Internet connection required for model access
-- Rate limits may apply based on OpenRouter API usage
+```
