@@ -1,4 +1,4 @@
-```
+
 # Tamil Chatbot and Translator
 
 A Streamlit application for translating between English and Tamil, and interacting with a chatbot powered by OpenRouter's API.
@@ -59,4 +59,3 @@ Contributions are welcome! Please:
 
 ## License
 MIT License
-```
